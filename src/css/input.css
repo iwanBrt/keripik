@@ -57,6 +57,10 @@ body {
     filter: drop-shadow(0 34px 46px rgba(12, 7, 4, 0.42));
 }
 
+.detail-order-button {
+    z-index: 30;
+}
+
 .product-scroll {
     scrollbar-width: thin;
     scrollbar-color: rgba(217, 205, 191, 0.35) transparent;
@@ -142,6 +146,16 @@ body {
         object-position: center;
         transform: scale(0.96);
         filter: drop-shadow(0 24px 32px rgba(12, 7, 4, 0.38));
+    }
+
+    .detail-product-visual {
+        height: 22rem;
+        padding-bottom: 4.75rem;
+    }
+
+    .detail-product-img {
+        bottom: 4.75rem;
+        height: auto;
     }
 
     .product-scroll {
