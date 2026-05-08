@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriAlam - Jamu Herbal Premium</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Fraunces:opsz,wght@9..144,650;9..144,750&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden font-sans text-brand-cream antialiased">
+    <div class="page-veil fixed inset-0 pointer-events-none"></div>
+
+    <header class="fixed left-0 right-0 top-0 z-50 px-4 py-3 sm:px-5 sm:py-5 lg:px-12">
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-4">
+            <a href="#" class="flex items-center gap-3 text-brand-cream" aria-label="NutriAlam">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-brand-cream/10 text-brand-yellow ring-1 ring-brand-cream/15 sm:h-11 sm:w-11">
+                    <i class="ph ph-leaf text-xl sm:text-2xl"></i>
+                </span>
+                <span class="font-display text-2xl font-extrabold leading-none tracking-wide sm:text-3xl">NUTRIALAM</span>
+            </a>
+
+            <nav class="glass hidden rounded-full px-8 py-3 text-sm font-bold text-brand-cream/75 md:flex md:items-center md:gap-9">
+                <a href="#" class="text-brand-cream">Beranda</a>
+                <a href="#produk" class="transition hover:text-brand-yellow">Produk</a>
+                <a href="#tentang" class="transition hover:text-brand-yellow">Tentang</a>
+                <a href="#kontak" class="transition hover:text-brand-yellow">Kontak</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <button class="glass-soft hidden h-10 w-10 place-items-center rounded-full text-brand-cream transition hover:text-brand-yellow sm:grid sm:h-11 sm:w-11" aria-label="Akun">
+                    <i class="ph ph-user text-xl"></i>
+                </button>
+                <button class="glass-soft grid h-10 w-10 place-items-center rounded-full text-brand-cream transition hover:text-brand-yellow sm:h-11 sm:w-11" aria-label="Keranjang">
+                    <i class="ph ph-shopping-cart-simple text-xl"></i>
+                </button>
+                <a href="#produk" class="hidden rounded-full bg-brand-mint px-5 py-3 text-sm font-extrabold text-brand-brown shadow-lg shadow-brand-mint/10 transition hover:bg-brand-cream sm:inline-flex">
+                    Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative">
+        <section class="relative overflow-hidden px-5 pb-12 pt-28 sm:pt-32 lg:min-h-screen lg:px-12 lg:pb-24 lg:pt-36">
+            <span class="floating-herb left-[3%] top-[34%] hidden opacity-80 lg:block" style="--rotate:-28deg"></span>
+            <span class="floating-herb bottom-[16%] left-[10%] hidden scale-125 opacity-75 lg:block" style="--rotate:42deg"></span>
+            <span class="floating-herb right-[7%] top-[11%] hidden scale-75 opacity-70 lg:block" style="--rotate:18deg"></span>
+
+            <div class="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.92fr_1.08fr]">
+                <div class="relative z-20" data-aos="fade-up">
+                    <p class="mb-5 inline-flex rounded-full bg-brand-cream/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.18em] text-brand-yellow ring-1 ring-brand-cream/15 sm:px-5 sm:text-sm">
+                        Koleksi jamu herbal
+                    </p>
+                    <h1 class="text-shadow-soft max-w-3xl font-display text-4xl font-extrabold leading-[1.02] text-[#DDBD95] sm:text-6xl lg:text-7xl">
+                        Temukan hangat alami di setiap tegukan.
+                    </h1>
+                    <p class="mt-5 max-w-xl text-base font-semibold leading-7 text-brand-cream/72 sm:mt-7 sm:text-lg sm:leading-8">
+                        Racikan kunyit, jahe, temulawak, dan rempah pilihan dalam kemasan praktis untuk rutinitas sehat setiap hari.
+                    </p>
+                    <a href="#produk" class="mt-7 inline-flex items-center justify-center rounded-full bg-brand-mint px-8 py-3.5 font-extrabold text-brand-brown shadow-xl shadow-brand-mint/10 transition hover:-translate-y-0.5 hover:bg-brand-cream sm:mt-8 sm:px-10 sm:py-4">
+                        Pilih Jamu
+                    </a>
+                </div>
+
+                <div class="relative min-h-[23rem] sm:min-h-[32rem] lg:min-h-[42rem]" data-aos="fade-left" data-aos-delay="120">
+                    <div class="hero-glow absolute inset-0"></div>
+                    <div class="absolute inset-x-0 top-0 z-10 mx-auto h-[23rem] w-full max-w-[26rem] sm:right-0 sm:mx-0 sm:h-[31rem] sm:max-w-[34rem] lg:h-[41rem] lg:max-w-[42rem]">
+                        <img src="./assets/icon.png" alt="Produk utama NutriAlam" class="asset-img hero-product-img">
+                    </div>
+                    <div class="glass-soft absolute bottom-5 left-0 z-20 hidden w-48 rounded-[1.6rem] p-4 sm:block">
+                        <p class="mt-2 font-display text-xl font-extrabold text-brand-cream">Kunyit Asam</p>
+                        <p class="text-sm font-bold text-brand-cream/60">Segar dan hangat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produk" class="relative z-20 px-5 pb-20 sm:-mt-16 sm:pb-24 lg:px-12">
+            <div class="mx-auto max-w-6xl">
+                <div class="mb-6 flex items-end justify-between gap-4">
+                    <div>
+                        <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-brand-yellow/80">Varian jamu</p>
+                        <h2 class="mt-2 font-display text-2xl font-extrabold leading-tight text-[#DDBD95] sm:text-3xl">Geser untuk lihat produk lainnya</h2>
+                    </div>
+                    <div class="hidden gap-2 sm:flex">
+                        <button class="glass-soft grid h-11 w-11 place-items-center rounded-full text-brand-cream transition hover:text-brand-yellow" aria-label="Geser produk ke kiri" onclick="document.getElementById('produk-track').scrollBy({ left: -320, behavior: 'smooth' })">
+                            <i class="ph ph-arrow-left text-xl"></i>
+                        </button>
+                        <button class="glass-soft grid h-11 w-11 place-items-center rounded-full text-brand-cream transition hover:text-brand-yellow" aria-label="Geser produk ke kanan" onclick="document.getElementById('produk-track').scrollBy({ left: 320, behavior: 'smooth' })">
+                            <i class="ph ph-arrow-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="produk-track" class="product-scroll flex snap-x snap-mandatory gap-5 overflow-x-auto px-1 pb-8 pt-16">
+                    <article class="glass min-w-[15.75rem] snap-start rounded-[1.65rem] p-4 text-center sm:min-w-[19rem] sm:p-5" data-aos="fade-up">
+                        <div class="relative mx-auto -mt-16 grid h-32 place-items-center sm:h-36">
+                            <img src="./assets/icon.png" alt="Jamu Kunyit Asam" class="asset-img">
+                            <span class="absolute bottom-4 right-7 rounded bg-white px-2 py-1 text-xs font-extrabold text-brand-brown">4.9</span>
+                        </div>
+                        <h2 class="mt-3 font-display text-2xl font-extrabold text-[#DDBD95]">Kunyit Asam</h2>
+                        <p class="mx-auto mt-2 max-w-[12rem] text-xs font-bold leading-5 text-brand-cream/55">Segar, asam manis, cocok untuk ritual sehat pagi.</p>
+                        <div class="mt-5 flex items-center justify-between">
+                            <span class="font-display text-2xl font-extrabold text-brand-cream">Rp28k</span>
+                            <button class="grid h-11 w-11 place-items-center rounded-full bg-brand-mint text-brand-brown transition hover:bg-brand-cream" aria-label="Tambah Kunyit Asam">
+                                <i class="ph ph-plus text-xl font-bold"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="glass min-w-[15.75rem] snap-start rounded-[1.65rem] p-4 text-center sm:min-w-[19rem] sm:p-5" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative mx-auto -mt-16 grid h-32 place-items-center sm:h-36">
+                            <img src="./assets/icon.png" alt="Jamu Beras Kencur" class="asset-img">
+                            <span class="absolute bottom-4 right-7 rounded bg-white px-2 py-1 text-xs font-extrabold text-brand-brown">5.0</span>
+                        </div>
+                        <h2 class="mt-3 font-display text-2xl font-extrabold text-[#DDBD95]">Beras Kencur</h2>
+                        <p class="mx-auto mt-2 max-w-[12rem] text-xs font-bold leading-5 text-brand-cream/55">Lembut, creamy, dengan aroma kencur yang khas.</p>
+                        <div class="mt-5 flex items-center justify-between">
+                            <span class="font-display text-2xl font-extrabold text-brand-cream">Rp30k</span>
+                            <button class="grid h-11 w-11 place-items-center rounded-full bg-brand-mint text-brand-brown transition hover:bg-brand-cream" aria-label="Tambah Beras Kencur">
+                                <i class="ph ph-plus text-xl font-bold"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="glass min-w-[15.75rem] snap-start rounded-[1.65rem] p-4 text-center sm:min-w-[19rem] sm:p-5" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative mx-auto -mt-16 grid h-32 place-items-center sm:h-36">
+                            <img src="./assets/icon.png" alt="Jamu Temulawak Madu" class="asset-img">
+                            <span class="absolute bottom-4 right-7 rounded bg-white px-2 py-1 text-xs font-extrabold text-brand-brown">4.8</span>
+                        </div>
+                        <h2 class="mt-3 font-display text-2xl font-extrabold text-[#DDBD95]">Temulawak Madu</h2>
+                        <p class="mx-auto mt-2 max-w-[12rem] text-xs font-bold leading-5 text-brand-cream/55">Hangat herbal dengan sentuhan madu yang nyaman.</p>
+                        <div class="mt-5 flex items-center justify-between">
+                            <span class="font-display text-2xl font-extrabold text-brand-cream">Rp32k</span>
+                            <button class="grid h-11 w-11 place-items-center rounded-full bg-brand-mint text-brand-brown transition hover:bg-brand-cream" aria-label="Tambah Temulawak Madu">
+                                <i class="ph ph-plus text-xl font-bold"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="glass min-w-[15.75rem] snap-start rounded-[1.65rem] p-4 text-center sm:min-w-[19rem] sm:p-5" data-aos="fade-up" data-aos-delay="250">
+                        <div class="relative mx-auto -mt-16 grid h-32 place-items-center sm:h-36">
+                            <img src="./assets/icon.png" alt="Jamu Jahe Sereh" class="asset-img">
+                            <span class="absolute bottom-4 right-7 rounded bg-white px-2 py-1 text-xs font-extrabold text-brand-brown">4.9</span>
+                        </div>
+                        <h2 class="mt-3 font-display text-2xl font-extrabold text-[#DDBD95]">Jahe Sereh</h2>
+                        <p class="mx-auto mt-2 max-w-[12rem] text-xs font-bold leading-5 text-brand-cream/55">Aroma sereh segar dengan hangat jahe yang ringan.</p>
+                        <div class="mt-5 flex items-center justify-between">
+                            <span class="font-display text-2xl font-extrabold text-brand-cream">Rp29k</span>
+                            <button class="grid h-11 w-11 place-items-center rounded-full bg-brand-mint text-brand-brown transition hover:bg-brand-cream" aria-label="Tambah Jahe Sereh">
+                                <i class="ph ph-plus text-xl font-bold"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="glass min-w-[15.75rem] snap-start rounded-[1.65rem] p-4 text-center sm:min-w-[19rem] sm:p-5" data-aos="fade-up" data-aos-delay="300">
+                        <div class="relative mx-auto -mt-16 grid h-32 place-items-center sm:h-36">
+                            <img src="./assets/icon.png" alt="Jamu Rosella Herbal" class="asset-img">
+                            <span class="absolute bottom-4 right-7 rounded bg-white px-2 py-1 text-xs font-extrabold text-brand-brown">4.7</span>
+                        </div>
+                        <h2 class="mt-3 font-display text-2xl font-extrabold text-[#DDBD95]">Rosella Herbal</h2>
+                        <p class="mx-auto mt-2 max-w-[12rem] text-xs font-bold leading-5 text-brand-cream/55">Asam segar, floral, dan cocok diminum dingin.</p>
+                        <div class="mt-5 flex items-center justify-between">
+                            <span class="font-display text-2xl font-extrabold text-brand-cream">Rp31k</span>
+                            <button class="grid h-11 w-11 place-items-center rounded-full bg-brand-mint text-brand-brown transition hover:bg-brand-cream" aria-label="Tambah Rosella Herbal">
+                                <i class="ph ph-plus text-xl font-bold"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <a href="#kontak" class="mx-auto mt-7 block w-fit text-sm font-bold text-brand-cream/45 underline underline-offset-4 transition hover:text-brand-yellow">
+                    Butuh rekomendasi jamu?
+                </a>
+            </div>
+        </section>
+
+        <section id="tentang" class="relative px-5 pb-20 sm:pb-24 lg:px-12">
+            <span class="floating-herb bottom-16 right-[13%] opacity-80" style="--rotate:-18deg"></span>
+            <span class="floating-herb bottom-32 right-[6%] hidden scale-75 opacity-70 md:block" style="--rotate:28deg"></span>
+
+            <div class="mx-auto max-w-7xl">
+                <div class="mb-6 flex items-end justify-between gap-4">
+                    <h2 class="font-display text-3xl font-extrabold text-[#DDBD95] sm:text-4xl lg:text-5xl" data-aos="fade-up">
+                        NUTRIALAM itu
+                    </h2>
+                    <div class="hidden gap-2 sm:flex">
+                        <button class="glass-soft grid h-11 w-11 place-items-center rounded-full text-brand-cream transition hover:text-brand-yellow" aria-label="Geser preview ke kiri" onclick="document.getElementById('tentang-track').scrollBy({ left: -window.innerWidth * 0.85, behavior: 'smooth' })">
+                            <i class="ph ph-arrow-left text-xl"></i>
+                        </button>
+                        <button class="glass-soft grid h-11 w-11 place-items-center rounded-full text-brand-cream transition hover:text-brand-yellow" aria-label="Geser preview ke kanan" onclick="document.getElementById('tentang-track').scrollBy({ left: window.innerWidth * 0.85, behavior: 'smooth' })">
+                            <i class="ph ph-arrow-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="tentang-track" class="product-scroll flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8">
+                    <article class="relative min-w-full snap-start py-2 sm:py-4">
+                        <div class="relative grid gap-8 lg:min-h-[34rem] lg:grid-cols-[1fr_22rem_1fr] lg:items-center">
+                            <div class="space-y-8 sm:space-y-12">
+                                <div class="relative pl-16" data-aos="fade-right">
+                                    <span class="absolute left-0 top-0 font-display text-7xl font-extrabold leading-none text-brand-cream/10 sm:text-8xl">1</span>
+                                    <h3 class="font-display text-2xl font-bold text-brand-cream sm:text-3xl">Bahan pilihan</h3>
+                                    <p class="mt-3 max-w-sm text-sm font-semibold leading-7 text-brand-cream/50">Setiap batch dibuat dari rempah pilihan untuk rasa, aroma, dan warna seduhan yang konsisten.</p>
+                                </div>
+                                <div class="relative pl-16" data-aos="fade-right" data-aos-delay="100">
+                                    <span class="absolute left-0 top-0 font-display text-7xl font-extrabold leading-none text-brand-cream/10 sm:text-8xl">2</span>
+                                    <h3 class="font-display text-2xl font-bold text-brand-cream sm:text-3xl">Nyaman dinikmati</h3>
+                                    <p class="mt-3 max-w-sm text-sm font-semibold leading-7 text-brand-cream/50">Racikannya dibuat seimbang, tidak menusuk, dan nyaman diminum sebagai ritual harian.</p>
+                                </div>
+                            </div>
+
+                            <div class="relative mx-auto grid h-80 w-full max-w-xs place-items-center sm:h-[30rem] sm:max-w-sm" data-aos="zoom-in">
+                                <img src="./assets/icon.png" alt="Detail produk NutriAlam" class="asset-img">
+                                <a href="#kontak" class="absolute bottom-2 rounded-full bg-brand-mint px-10 py-3.5 font-display text-lg font-extrabold text-brand-brown shadow-xl shadow-brand-mint/10 transition hover:bg-brand-cream sm:px-12 sm:py-4 sm:text-xl">
+                                    Pesan
+                                </a>
+                            </div>
+
+                            <div class="space-y-8 sm:space-y-12">
+                                <div class="relative pl-16 lg:pl-20" data-aos="fade-left">
+                                    <span class="absolute left-0 top-0 font-display text-7xl font-extrabold leading-none text-brand-cream/10 sm:text-8xl">3</span>
+                                    <h3 class="font-display text-2xl font-bold text-brand-cream sm:text-3xl">Pendekatan personal</h3>
+                                    <p class="mt-3 max-w-sm text-sm font-semibold leading-7 text-brand-cream/50">Ada pilihan varian dan ukuran supaya pembeli baru maupun pelanggan rutin bisa memilih dengan mudah.</p>
+                                </div>
+                                <div class="relative pl-16 lg:pl-20" data-aos="fade-left" data-aos-delay="100">
+                                    <span class="absolute left-0 top-0 font-display text-7xl font-extrabold leading-none text-brand-cream/10 sm:text-8xl">4</span>
+                                    <h3 class="font-display text-2xl font-bold text-brand-cream sm:text-3xl">Tim yang rapi</h3>
+                                    <p class="mt-3 max-w-sm text-sm font-semibold leading-7 text-brand-cream/50">Pengemasan dibuat teliti agar jamu terlihat menarik dan tetap aman sampai ke tangan pelanggan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass relative grid min-w-full snap-start gap-8 rounded-[1.5rem] p-5 sm:rounded-[2rem] sm:p-7 md:grid-cols-[0.9fr_1.1fr] md:p-12">
+                        <div>
+                            <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-brand-yellow/80">Menu racikan</p>
+                            <h3 class="mt-3 font-display text-3xl font-extrabold leading-tight text-[#DDBD95] sm:text-4xl lg:text-5xl">Pilih berdasarkan kebutuhan harian.</h3>
+                            <p class="mt-5 max-w-xl text-sm font-semibold leading-7 text-brand-cream/55 sm:text-base sm:leading-8">Setiap menu bisa diarahkan ke produk tertentu, misalnya stamina, relaksasi, pencernaan, atau minuman segar setelah aktivitas.</p>
+                        </div>
+                        <div class="grid gap-4 sm:grid-cols-2">
+                            <div class="glass-soft rounded-3xl p-5">
+                                <i class="ph ph-sun-horizon text-3xl text-brand-yellow"></i>
+                                <h4 class="mt-4 font-display text-2xl font-bold text-brand-cream">Pagi Segar</h4>
+                                <p class="mt-2 text-sm font-semibold leading-6 text-brand-cream/50">Kunyit asam dan beras kencur.</p>
+                            </div>
+                            <div class="glass-soft rounded-3xl p-5">
+                                <i class="ph ph-fire text-3xl text-brand-yellow"></i>
+                                <h4 class="mt-4 font-display text-2xl font-bold text-brand-cream">Hangat Malam</h4>
+                                <p class="mt-2 text-sm font-semibold leading-6 text-brand-cream/50">Jahe sereh dan temulawak madu.</p>
+                            </div>
+                            <div class="glass-soft rounded-3xl p-5">
+                                <i class="ph ph-drop text-3xl text-brand-yellow"></i>
+                                <h4 class="mt-4 font-display text-2xl font-bold text-brand-cream">Dingin Segar</h4>
+                                <p class="mt-2 text-sm font-semibold leading-6 text-brand-cream/50">Rosella herbal dan kunyit asam.</p>
+                            </div>
+                            <div class="glass-soft rounded-3xl p-5">
+                                <i class="ph ph-gift text-3xl text-brand-yellow"></i>
+                                <h4 class="mt-4 font-display text-2xl font-bold text-brand-cream">Paket Gift</h4>
+                                <p class="mt-2 text-sm font-semibold leading-6 text-brand-cream/50">Bundling jamu untuk hampers.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass relative grid min-w-full snap-start gap-8 rounded-[1.5rem] p-5 sm:rounded-[2rem] sm:p-7 md:grid-cols-[1fr_0.9fr] md:p-12">
+                        <div>
+                            <p class="text-sm font-extrabold uppercase tracking-[0.2em] text-brand-yellow/80">Cara menikmati</p>
+                            <h3 class="mt-3 font-display text-3xl font-extrabold leading-tight text-[#DDBD95] sm:text-4xl lg:text-5xl">Bisa hangat, bisa dingin, tetap terasa rempahnya.</h3>
+                            <div class="mt-8 grid gap-4 sm:grid-cols-3">
+                                <div class="rounded-3xl bg-brand-cream/10 p-5">
+                                    <span class="font-display text-5xl font-extrabold text-brand-cream/20">1</span>
+                                    <p class="mt-2 font-bold text-brand-cream">Tuang racikan</p>
+                                </div>
+                                <div class="rounded-3xl bg-brand-cream/10 p-5">
+                                    <span class="font-display text-5xl font-extrabold text-brand-cream/20">2</span>
+                                    <p class="mt-2 font-bold text-brand-cream">Seduh atau dinginkan</p>
+                                </div>
+                                <div class="rounded-3xl bg-brand-cream/10 p-5">
+                                    <span class="font-display text-5xl font-extrabold text-brand-cream/20">3</span>
+                                    <p class="mt-2 font-bold text-brand-cream">Nikmati perlahan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative min-h-64 sm:min-h-72">
+                            <img src="./assets/icon.png" alt="Penyajian jamu NutriAlam" class="asset-img">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="px-5 pb-16 lg:px-12">
+            <div class="glass mx-auto grid max-w-7xl gap-8 overflow-hidden rounded-[1.5rem] p-5 sm:rounded-[2rem] sm:p-8 md:grid-cols-[1fr_18rem] md:p-12">
+                <div data-aos="fade-up">
+                    <h2 class="font-display text-3xl font-extrabold leading-tight text-[#DDBD95] sm:text-4xl lg:text-5xl">
+                        Cari tahu racikan jamu mana yang paling cocok buat kamu.
+                    </h2>
+                    <a href="https://wa.me/6281234567890" class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-brand-cream px-7 py-4 font-extrabold text-brand-brown transition hover:bg-brand-mint sm:w-auto sm:px-9">
+                        Konsultasi via WhatsApp
+                    </a>
+                </div>
+                <div class="relative min-h-48 sm:min-h-52">
+                    <span class="floating-herb left-4 top-3 scale-75" style="--rotate:24deg"></span>
+                    <span class="floating-herb bottom-8 left-16 scale-110" style="--rotate:-34deg"></span>
+                    <span class="floating-herb right-4 top-20 scale-90" style="--rotate:18deg"></span>
+                    <img src="./assets/icon.png" alt="Aksen rempah NutriAlam" class="asset-img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="px-5 pb-8 lg:px-12">
+        <div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 border-t border-brand-cream/10 pt-6 text-sm font-bold text-brand-cream/38 md:flex-row">
+            <p>© 2026 NutriAlam. Jamu herbal untuk ritual sehat harian.</p>
+            <p>Instagram · Marketplace · WhatsApp</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 750,
+            offset: 90
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 78% 8%, rgba(242, 199, 68, 0.24), transparent 16rem),
+        radial-gradient(circle at 8% 32%, rgba(147, 201, 190, 0.12), transparent 18rem),
+        linear-gradient(145deg, #402510 0%, #2b1810 45%, #1e110c 100%);
+}
+
+.page-veil {
+    background-image:
+        linear-gradient(rgba(217, 205, 191, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(217, 205, 191, 0.025) 1px, transparent 1px);
+    background-size: 68px 68px;
+}
+
+.glass {
+    border: 1px solid rgba(217, 205, 191, 0.16);
+    background: linear-gradient(145deg, rgba(217, 205, 191, 0.14), rgba(115, 90, 68, 0.16));
+    box-shadow: 0 24px 80px rgba(13, 7, 4, 0.26);
+    backdrop-filter: blur(22px);
+}
+
+.glass-soft {
+    border: 1px solid rgba(217, 205, 191, 0.12);
+    background: rgba(217, 205, 191, 0.11);
+    box-shadow: 0 18px 60px rgba(13, 7, 4, 0.22);
+    backdrop-filter: blur(18px);
+}
+
+.hero-glow {
+    background:
+        radial-gradient(circle at 64% 28%, rgba(242, 199, 68, 0.45), transparent 8rem),
+        radial-gradient(circle at 44% 66%, rgba(217, 205, 191, 0.2), transparent 13rem);
+    filter: blur(4px);
+}
+
+.asset-img {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 28px 34px rgba(12, 7, 4, 0.36));
+}
+
+.hero-product-img {
+    object-position: center right;
+    filter: drop-shadow(0 34px 46px rgba(12, 7, 4, 0.42));
+}
+
+.product-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(217, 205, 191, 0.35) transparent;
+    scroll-padding-inline: 1rem;
+}
+
+.product-scroll::-webkit-scrollbar {
+    height: 0.55rem;
+}
+
+.product-scroll::-webkit-scrollbar-track {
+    background: rgba(217, 205, 191, 0.06);
+    border-radius: 999px;
+}
+
+.product-scroll::-webkit-scrollbar-thumb {
+    background: rgba(217, 205, 191, 0.32);
+    border-radius: 999px;
+}
+
+.floating-bean {
+    position: absolute;
+    width: 3.2rem;
+    height: 1.7rem;
+    border-radius: 999px;
+    background: radial-gradient(circle at 32% 30%, #c1915f, #4b2515 70%);
+    box-shadow: inset -8px -4px 12px rgba(12, 7, 4, 0.34), 0 18px 28px rgba(12, 7, 4, 0.24);
+    transform: rotate(var(--rotate, -24deg));
+}
+
+.floating-bean::after {
+    content: "";
+    position: absolute;
+    left: 44%;
+    top: 14%;
+    width: 12%;
+    height: 72%;
+    border-radius: 999px;
+    background: rgba(217, 205, 191, 0.22);
+    transform: rotate(10deg);
+}
+
+.floating-herb {
+    position: absolute;
+    width: 3.6rem;
+    height: 1.75rem;
+    border-radius: 999px;
+    background:
+        radial-gradient(circle at 28% 32%, rgba(255, 224, 158, 0.95), transparent 24%),
+        linear-gradient(135deg, #d49a42, #7a421d 72%);
+    box-shadow: inset -10px -5px 14px rgba(64, 37, 16, 0.38), 0 18px 28px rgba(12, 7, 4, 0.24);
+    transform: rotate(var(--rotate, -24deg));
+}
+
+.floating-herb::after {
+    content: "";
+    position: absolute;
+    inset: 22% 28%;
+    border-radius: 999px;
+    border-left: 2px solid rgba(255, 232, 181, 0.3);
+    border-right: 2px solid rgba(64, 37, 16, 0.18);
+}
+
+.text-shadow-soft {
+    text-shadow: 0 10px 34px rgba(12, 7, 4, 0.3);
+}
+
+@media (max-width: 640px) {
+    .page-veil {
+        background-size: 44px 44px;
+    }
+
+    .glass,
+    .glass-soft {
+        backdrop-filter: blur(16px);
+    }
+
+    .asset-img {
+        filter: drop-shadow(0 20px 26px rgba(12, 7, 4, 0.34));
+    }
+
+    .hero-product-img {
+        object-position: center;
+        transform: scale(0.96);
+        filter: drop-shadow(0 24px 32px rgba(12, 7, 4, 0.38));
+    }
+
+    .product-scroll {
+        margin-inline: -1.25rem;
+        padding-inline: 1.25rem;
+        scroll-padding-inline: 1.25rem;
+    }
+
+    .product-scroll::-webkit-scrollbar {
+        height: 0.35rem;
+    }
+}
