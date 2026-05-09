@@ -577,11 +577,23 @@
 
                 const data = await response.json();
                 
-                if (data.candidates && data.candidates[0].content.parts[0].text) {
+                if (response.ok && data.candidates && data.candidates[0].content.parts[0].text) {
                     const resultText = data.candidates[0].content.parts[0].text;
-                    const resultJson = JSON.parse(resultText);
+                    const cleanText = resultText.replace(/```json\n?|\n?```/g, '');
+                    const resultJson = JSON.parse(cleanText);
                     
                     showResult(resultJson);
+                } else if (response.status === 429 || (data.error && data.error.code === 429)) {
+                    console.warn("API Rate Limit tercapai. Menggunakan fallback data.");
+                    const fallbackMoods = [
+                        { mood: "Senang", kategori_rasa: "Manis", alasan: "Kamu terlihat tersenyum! Manis karamel sangat pas untuk harimu." },
+                        { mood: "Marah", kategori_rasa: "Pedas", alasan: "Aura panas terlihat! Sensasi pedas nendang ini pasti bikin lega." },
+                        { mood: "Santai", kategori_rasa: "Balado", alasan: "Wajahmu sangat rileks, cocok ditemani bumbu balado yang gurih." },
+                        { mood: "Cape", kategori_rasa: "Pedas Manis", alasan: "Lelahmu butuh booster! Pedas manis ini siap mengembalikan energi." },
+                        { mood: "Sedih", kategori_rasa: "Extra Pedas", alasan: "Jangan murung! Extra pedas ini dijamin bikin keringat bercucuran." }
+                    ];
+                    const randomFallback = fallbackMoods[Math.floor(Math.random() * fallbackMoods.length)];
+                    showResult(randomFallback);
                 } else {
                     throw new Error("Invalid response format");
                 }
