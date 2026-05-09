@@ -5,14 +5,16 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          yellow: '#F2C744',
-          cream: '#D9CDBF',
-          linen: '#A6886C',
-          tan: '#8A6A50',
-          clay: '#735A44',
-          brown: '#402510',
-          mint: '#93C9BE',
-          dark: '#21130D'
+          gold: '#E8A938',
+          amber: '#D4A24E',
+          cream: '#F5DEB3',
+          wheat: '#DEB887',
+          linen: '#C4956A',
+          tan: '#8B5A2B',
+          brown: '#3A1F0B',
+          dark: '#1A0E06',
+          accent: '#E8C468',
+          cta: '#D4873E',
         }
       },
       fontFamily: {
